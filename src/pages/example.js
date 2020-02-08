@@ -36,7 +36,7 @@ export const query = graphql`
       mozohackImage: file(relativePath: {eq: "mozohack.jpg" }) {
        childImageSharp {
          fluid(maxWidth: 1000) {
-           ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid
          }
        }
      }
