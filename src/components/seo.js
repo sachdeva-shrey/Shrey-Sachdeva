@@ -75,7 +75,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
-  description: ``,
+  description: `Shrey Sachdeva is a CSE undergraduate studying at SRMIST, Chennai. A front-end developer and UI/UX designer.`,
 }
 
 SEO.propTypes = {
