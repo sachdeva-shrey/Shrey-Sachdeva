@@ -9,7 +9,7 @@ const NotFoundPage = () => (
     <SEO title="404: Not found" />
     <div>
       <h1>Oooooops!</h1>
-      <h6>You just hit a route that doesn't exist... the sadness.</h6>
+      <h6>You just hit a route that doesn't exist... the sadness. </h6>
       <br />
       <Link to="/">
         <h5 style={{ textDecoration: 'none !important', color: "#000"}}>
