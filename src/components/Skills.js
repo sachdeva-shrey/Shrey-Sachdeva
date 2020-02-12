@@ -9,7 +9,6 @@ const Skills = () => (
       padding: "0",
       marginTop: "18%",
       paddingLeft: "0",
-      width: "100vw",
       position: "absolute",
       left: "0",
     }}

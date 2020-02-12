@@ -31,19 +31,24 @@ const Image = props => (
 
       //const imageSizes = image.node.childImageSharp.sizes; sizes={imageSizes}
       return (
-        <Img
+        <div
           style={{
-            marginTop: "20%",
-            borderRadius: "20px",
-            width: "400px",
-            height: "auto",
+            display: "flex",
             margin: "0",
-            marginLeft: "30px",
+            marginLeft: "0",
           }}
-          
-          alt={props.alt}
-          fluid={image.node.childImageSharp.fluid}
-        />
+        >
+          <Img
+            style={{
+              borderRadius: "20px",
+              width: "600px",
+              height: "auto",
+              marginLeft: "40px",
+            }}
+            alt={props.alt}
+            fluid={image.node.childImageSharp.fluid}
+          />
+        </div>
       )
     }}
   />
