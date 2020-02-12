@@ -40,7 +40,7 @@ const Image = props => (
         >
           <Img
             style={{
-              borderRadius: "20px",
+              borderRadius: "10px",
               width: "600px",
               height: "auto",
               marginLeft: "40px",

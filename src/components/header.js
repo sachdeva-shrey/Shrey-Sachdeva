@@ -34,48 +34,60 @@ const Header = ({ siteTitle }) => (
       >
         <FaLinkedinIn
           size="1.5em"
-          color="#081430"
+          color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
         />
-          <FaGithub
-            size="1.5em"
-            color="#081430"
-            style={{ paddingLeft: "10px" }}
-          />
+        <FaGithub
+          size="1.5em"
+          color="#1FA2F2"
+          style={{ paddingLeft: "10px" }}
+        />
         <FaDribbble
           size="1.5em"
-          color="#081430"
+          color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
         />
         <FaBehance
           size="1.5em"
-          color="#081430"
+          color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
         />
         <FaMedium
           size="1.5em"
-          color="#081430"
+          color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
         />
         <div
           style={{
-            backgroundColor: "#081430",
+            backgroundColor: "#303741",
             color: "#fff",
             border: "none",
-            borderRadius: "20px",
+            borderRadius: "6px",
             paddingLeft: "20px",
             paddingRight: "20px",
             height: "30px",
             marginLeft: "30px",
+            display: "flex",
+            width: "125px",
           }}
         >
           <h4
             style={{
               textAlign: "left",
+              display: "inline",
             }}
           >
             Say Hi
           </h4>
+          <img
+            style={{
+              height: "20px",
+              display: "inline-block",
+              paddingTop: "5px",
+              paddingLeft: "10px",
+            }}
+            src={hi}
+          ></img>
         </div>
       </div>
     </div>

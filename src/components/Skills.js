@@ -5,7 +5,7 @@ const Skills = () => (
     className="skills"
     style={{
       height: "500px",
-      background: "linear-gradient(to right, #03CDFD, #3681D8)",
+      background: " var(--main-font-color)",
       padding: "0",
       marginTop: "18%",
       paddingLeft: "0",
