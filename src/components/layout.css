@@ -1,8 +1,13 @@
 @font-face {
-  font-family: 'CircularStd-Medium';
-  src: local('CircularStd'), url(../fonts/CircularStd-Medium.otf);
+  font-family: "CircularStd-Medium";
+  src: local("CircularStd"), url(../fonts/CircularStd-Medium.otf);
 }
 
+@font-face {
+  font-family: "Space-Grotesk";
+  src: local("Space-Grotesk"), url(../fonts/SpaceGrotesk-Regular.otf);
+}
+/* 
 @font-face {
   font-family: 'Neue-Haas';
   src: url(../fonts/NHaasGroteskTXPro-55Rg.ttf);
@@ -11,11 +16,11 @@
 @font-face {
   font-family: 'Helvetica-Neue';
   src: url(../fonts/HelveticaNeueLight.ttf);
-}
+} */
 
 :root {
-  --main-font-color: #1FA2F2;
-  --grey-color: #9B9EA3;
+  --main-font-color: #1fa2f2;
+  --grey-color: #9b9ea3;
 }
 
 html {
@@ -25,7 +30,7 @@ html {
 }
 body {
   margin: 0;
-  background-color: #262D37;
+  background-color: #262d37;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -238,7 +243,7 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  /* margin-bottom: 1.45rem; */
 }
 h1 {
   margin-left: 0;
@@ -250,13 +255,14 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'CircularStd-Medium' ,-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "CircularStd-Medium", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 4rem;
   line-height: 1.1;
-  color: var(--main-font-color)
+  color: var(--main-font-color);
 }
 h2 {
   margin-left: 0;
@@ -268,12 +274,16 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  font-family: "CircularStd-Medium", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  font-size: 2rem;
   line-height: 1.1;
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: normal;
 }
 h3 {
   margin-left: 0;
@@ -302,10 +312,13 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Helvetica-Neue', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Space-Grotesk", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
+  font-weight: normal;
+  color: #fff;
 }
 h5 {
   margin-left: 0;
@@ -334,13 +347,14 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Helvetica-Neue', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Helvetica-Neue", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
   line-height: 1.1;
-  color: var(--grey-color)
+  color: var(--grey-color);
 }
 hgroup {
   margin-left: 0;
@@ -405,7 +419,10 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: #000
+  color: #fff;
+  text-align: center;
+  font-family: "Space-Grotesk";
+  font-size: 16px;
 }
 figure {
   margin-left: 0;
@@ -531,12 +548,18 @@ th {
 }
 li {
   margin-bottom: calc(1.45rem / 2);
+  list-style: none;
+  font-family: "Space-Grotesk";
+  color: #fff;
 }
 ol li {
   padding-left: 0;
+  font-family: "Space-Grotesk";
 }
 ul li {
   padding-left: 0;
+  font-family: "Space-Grotesk";
+  color: #fff;
 }
 li > ol {
   margin-left: 1.45rem;
@@ -642,56 +665,108 @@ pre tt:after {
   }
 }
 
-
 .container-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   width: 60%;
-  height: 600px;
-  background-color: #fff;
+  height: 640px;
+  background-color: #303741;
   margin: 100px 280px 0px 280px;
   border-radius: 20px;
-  box-shadow: 0px 7px 5px 0px #E0DEDE;
+  box-shadow: 0px 7px 5px 0px #292929;
   margin-bottom: 20%;
-  }
+}
 
 .container-left {
   text-align: center;
-  padding-top: 10%;
+  margin: 0 auto;
 }
 
 .container-right {
   border-left: 0.5px solid #e5e5e5;
   text-align: center;
-  padding-top: 10%;
 }
-
 
 .skills > p {
   text-align: center;
-  margin: 5% 10%; 
+  margin: 5% 10%;
   margin-bottom: 0 !important;
-  font-family: 'Helvetica-Neue', 'Courier New', Courier, 'monospace';
+  font-family: "Space-Grotesk", "Courier New", Courier, "monospace";
+  color: #000;
 }
 
 .sub-heading {
   display: inline-block;
 }
 
-.container > h6{
+.container > h6 {
   text-align: center;
   color: var(--main-font-color);
-  font-family: 'CircularStd-Medium', 'Courier New', Courier, 'monospace';
+  font-family: "CircularStd-Medium", "Courier New", Courier, "monospace";
   font-weight: normal;
   font-size: 30px;
 }
 
 .gallery {
-  margin-top: '20%';
-  border-radius: '20px';
-  width: '700px';
-  height: 'auto';
-  margin: '0';
-  margin-left: '30px';
+  margin-top: "20%";
+  border-radius: "20px";
+  width: "700px";
+  height: "auto";
+  margin: "0";
+  margin-left: "30px";
+}
+
+.hi:hover {
+  -webkit-transform: rotate(-40deg);
+  -moz-transform: rotate(-40deg);
+  -o-transform: rotate(-40deg);
+  -ms-transform: rotate(-40deg);
+  transform: rotate(-40deg);
+  -webkit-animation: wink 0.5s alternate infinite; /* Safari 4+ */
+  -moz-animation: wink 0.5s alternate infinite; /* Fx 5+ */
+  -o-animation: wink 0.5s alternate infinite; /* Opera 12+ */
+  animation: wink 0.5s alternate infinite; /* IE 10+, Fx 29+ */
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-animation-timing-function: ease; /* Chrome, Safari, Opera */
+  animation-timing-function: ease;
+}
+
+@-webkit-keyframes wink {
+  0% {
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes wink {
+  0% {
+    -webkit-transform: rotate(-40deg);
+    -moz-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    -ms-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(40deg);
+    -moz-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    -ms-transform: rotate(40deg);
+    transform: rotate(40deg);
+  }
 }

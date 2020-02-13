@@ -86,6 +86,7 @@ const Header = ({ siteTitle }) => (
               paddingTop: "5px",
               paddingLeft: "10px",
             }}
+            className="hi"
             src={hi}
           ></img>
         </div>

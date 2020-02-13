@@ -14,6 +14,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
