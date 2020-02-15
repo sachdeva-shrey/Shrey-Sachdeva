@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Shrey Sachdeva`,
-    description: `Portfolio website`,
+    description: `Developer, UI/UX Designer`,
     author: `Shrey Sachdeva`,
   },
   plugins: [
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/shrey-sachdeva.png`, // This path is relative to the root of the site.
+        icon: `src/images/ss_white.svg`, // This path is relative to the root of the site.
       },
     },
     {

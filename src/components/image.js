@@ -29,7 +29,6 @@ const Image = props => (
         return null
       }
 
-      //const imageSizes = image.node.childImageSharp.sizes; sizes={imageSizes}
       return (
         <div
           style={{
@@ -39,6 +38,7 @@ const Image = props => (
           }}
         >
           <Img
+          className="work"
             style={{
               borderRadius: "10px",
               width: "600px",

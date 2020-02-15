@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../images/shrey-sachdeva.png"
+import logo from "../images/ss_white.svg"
 import hi from "../images/hi.png"
 
 import { FaDribbble } from "react-icons/fa"
@@ -32,32 +32,38 @@ const Header = ({ siteTitle }) => (
           marginLeft: "75%",
         }}
       >
+        <a href="https://www.linkedin.com/in/shrey-sachdeva/">
         <FaLinkedinIn
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
-        />
+        /></a>
+        <a href="https://github.com/shrey-sachdeva2000">
         <FaGithub
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
-        />
+        /></a>
+        <a href="https://dribbble.com/shrey_sachdeva">
         <FaDribbble
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
-        />
+        /></a>
+         <a href="https://www.behance.net/shreysachdeva">
         <FaBehance
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
-        />
+        /></a>
+        <a href="https://medium.com/@shreysachdeva.2000">
         <FaMedium
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
-        />
+        /></a>
         <div
+        className="hi"
           style={{
             backgroundColor: "#303741",
             color: "#fff",
@@ -68,7 +74,8 @@ const Header = ({ siteTitle }) => (
             height: "30px",
             marginLeft: "30px",
             display: "flex",
-            width: "125px",
+            width: "124px",
+            cursor: "pointer",
           }}
         >
           <h4
@@ -86,7 +93,6 @@ const Header = ({ siteTitle }) => (
               paddingTop: "5px",
               paddingLeft: "10px",
             }}
-            className="hi"
             src={hi}
           ></img>
         </div>

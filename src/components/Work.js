@@ -22,7 +22,7 @@ const Work = () => (
     <Fade bottom>
       <h2>
         Always creating and hardly stopping.
-        <br /> Here's a place for the rest of my creations.
+        <br /> Here's a place for some of my creations.
       </h2>
       <InView>
         {({ inView, ref, entry }) => (
@@ -36,26 +36,38 @@ const Work = () => (
               }}
             >
               <div>
+              <a href="https://mozofest.srmkzilla.net">
+                  {inView ? (
+                    <Image alt="mozohack" filename="mozohack.jpg" />
+                  ) : null}{" "}
+                </a>
                 <a href="https://srmkzilla.net">
                   {inView ? (
                     <Image alt="srmkzilla" filename="srmkzilla.jpg" />
                   ) : null}{" "}
                 </a>
-                <h3>UI/UX</h3>
-                {inView ? (
-                  <Image alt="srmkzilla" filename="mozohack.jpg" />
-                ) : null}
-                <h3>UI/UX</h3>
+                <a href="https://play.google.com/store/apps/details?id=com.ionicframework.srmpedia121298&hl=en_IN">
+                  {inView ? (
+                    <Image alt="srmpedia" filename="srmpedia.jpg" />
+                  ) : null}{" "}
+                </a>
               </div>
               <div>
-                {inView ? (
-                  <Image alt="srmkzilla" filename="srmkzilla.jpg" />
-                ) : null}
-                <h3>UI/UX</h3>
-                {inView ? (
-                  <Image alt="srmkzilla" filename="srmkzilla.jpg" />
-                ) : null}
-                <h3>UI/UX</h3>
+              <a href="https://mozofest.srmkzilla.net">
+                  {inView ? (
+                    <Image alt="mozohack" filename="mozohack.jpg" />
+                  ) : null}{" "}
+                </a>
+                <a href="https://srmkzilla.net">
+                  {inView ? (
+                    <Image alt="srmkzilla" filename="srmkzilla.jpg" />
+                  ) : null}{" "}
+                </a>
+                <a href="https://srmkzilla.net">
+                  {inView ? (
+                    <Image alt="srmpedia" filename="srmpedia.jpg" />
+                  ) : null}{" "}
+                </a>
               </div>
             </div>
           </div>

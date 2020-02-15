@@ -15,7 +15,6 @@ const Hero = () => (
           textAlign: "left",
           marginLeft: "14%",
           fontSize: "1.5rem",
-          fontWeight: "normal",
         }}
       >
         Hi,
@@ -24,7 +23,6 @@ const Hero = () => (
       <h6
         style={{
           fontSize: "1.5rem",
-          fontWeight: "normal",
         }}
       >
         a developer and designer
@@ -32,7 +30,6 @@ const Hero = () => (
       <h6
         style={{
           fontSize: "1.5rem",
-          fontWeight: "normal",
         }}
       >
         on a mission to code and design simply beautiful things

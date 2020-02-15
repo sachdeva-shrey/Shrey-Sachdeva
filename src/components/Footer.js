@@ -12,14 +12,15 @@ const Footer = () => (
       position: "absolute",
       left: "0",
       marginLeft: "0 !important",
-      marginTop: "70%",
+      marginTop: "80%",
       width: "100%",
-      backgroundColor: "#303741",
+      // backgroundColor: "#303741",
+      backgroundColor: "#1fa2f2",
       margin: "0 !important",
-      height: "420px",
+      height: "300px",
     }}
   >
-    <div>
+    <div style={{ marginTop: "50px"  }}>
       <h2>
         Let's build beautiful,
         <br />
@@ -29,6 +30,7 @@ const Footer = () => (
     </div>
     <a class="mailto" href="mailto:shrey00000@gmail.com">
       <div
+      className="hi"
         style={{
           backgroundColor: "#262D37",
           color: "#fff",
@@ -58,17 +60,17 @@ const Footer = () => (
             paddingLeft: "15px",
           }}
           src={hi}
-          className="hi"
+          
           alt="Hi"
         ></img>
       </div>
     </a>
     <div
       class="socials"
-      style={{ display: "flex", marginLeft: "37%", marginTop: "20px" }}
+      style={{ display: "flex", marginLeft: "37%", marginTop: "150px" }}
     >
       <a
-        style={{ marginLeft: "10px", textDecoration: "none" }}
+        style={{ marginLeft: "10px", textDecoration: "none", marginBottom: "0px"}}
         href="https://github.com/shrey-sachdeva2000"
       >
         <p>GitHub</p>
