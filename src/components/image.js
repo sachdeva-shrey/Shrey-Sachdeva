@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { InView } from "react-intersection-observer"
 
 const Image = props => (
   <StaticQuery
@@ -30,25 +31,16 @@ const Image = props => (
       }
 
       return (
-        <div
-          style={{
-            display: "flex",
-            margin: "0",
-            marginLeft: "0",
-          }}
-        >
-          <Img
-          className="work"
-            style={{
-              borderRadius: "10px",
-              width: "600px",
-              height: "auto",
-              marginLeft: "40px",
-            }}
-            alt={props.alt}
-            fluid={image.node.childImageSharp.fluid}
-          />
-        </div>
+          <InView>
+        {({ inView, ref, entry }) => (
+          <div ref={ref}>
+            {inView ? <Image alt="image_1" filename="image_2.jpg" /> : null}
+            {inView ? <Image alt="image_1" filename="image_1.jpg" /> : null}
+            {inView ? <Image alt="image_1" filename="image_3.jpg" /> : null}
+            {inView ? <Image alt="image_1" filename="image_4.jpg" /> : null}
+          </div>       
+        )}
+      </InView>
       )
     }}
   />
