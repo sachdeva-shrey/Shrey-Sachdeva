@@ -9,10 +9,10 @@ const Footer = () => (
   <div
     style={{
       display: "block",
-      position: "absolute",
-      left: "0",
-      marginLeft: "0 !important",
-      marginTop: "80%",
+      // position: "absolute",
+      // left: "0",
+      // marginLeft: "0 !important",
+      // marginTop: "80%",
       width: "100%",
       // backgroundColor: "#303741",
       backgroundColor: "#1fa2f2",
@@ -28,7 +28,7 @@ const Footer = () => (
       </h2>
       <p>Interested in collaborating? I'll buy the coffee.</p>
     </div>
-    <a class="mailto" href="mailto:shrey00000@gmail.com">
+    <a className="mailto" href="mailto:shrey00000@gmail.com">
       <div
       className="hi"
         style={{
@@ -66,7 +66,7 @@ const Footer = () => (
       </div>
     </a>
     <div
-      class="socials"
+      className="socials"
       style={{ display: "flex", marginLeft: "37%", marginTop: "150px" }}
     >
       <a

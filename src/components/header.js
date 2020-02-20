@@ -24,6 +24,7 @@ const Header = ({ siteTitle }) => (
           width: "auto",
           marginLeft: "50px",
         }}
+        alt="shrey-sachdeva-logo"
       />
 
       <div
@@ -32,35 +33,40 @@ const Header = ({ siteTitle }) => (
           marginLeft: "75%",
         }}
       >
-        <a href="https://www.linkedin.com/in/shrey-sachdeva/">
+        <a hreflang="english" href="https://www.linkedin.com/in/shrey-sachdeva/">
         <FaLinkedinIn
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
+          alt="linkedin"
         /></a>
-        <a href="https://github.com/shrey-sachdeva2000">
+        <a hreflang="english" href="https://github.com/shrey-sachdeva2000">
         <FaGithub
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
+          alt="github"
         /></a>
-        <a href="https://dribbble.com/shrey_sachdeva">
+        <a hreflang="english" href="https://dribbble.com/shrey_sachdeva">
         <FaDribbble
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
+          alt="dribbble"
         /></a>
-         <a href="https://www.behance.net/shreysachdeva">
+         <a hreflang="english" href="https://www.behance.net/shreysachdeva">
         <FaBehance
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
+          alt="behance"
         /></a>
-        <a href="https://medium.com/@shreysachdeva.2000">
+        <a hreflang="english" href="https://medium.com/@shreysachdeva.2000">
         <FaMedium
           size="1.5em"
           color="#1FA2F2"
           style={{ paddingLeft: "10px" }}
+          alt="medium"
         /></a>
         <div
         className="hi"
@@ -94,6 +100,7 @@ const Header = ({ siteTitle }) => (
               paddingLeft: "10px",
             }}
             src={hi}
+            alt="waving hand"
           ></img>
         </div>
       </div>

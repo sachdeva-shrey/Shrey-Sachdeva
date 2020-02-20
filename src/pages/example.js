@@ -4,7 +4,7 @@ import Image from "../components/Image"
 
 const Gallery = () => (
   <div>
-    <Image />
+    {/* <Image /> */}
      {/* <div style={{ marginTop: "800px" }}>
       <InView>
         {({ inView, ref, entry }) => (
@@ -16,6 +16,10 @@ const Gallery = () => (
           </div>   
         )}
       </InView> */}
+    <Image alt="image_1" filename="image_2.jpg" />
+    <Image alt="image_1" filename="image_1.jpg" />
+    <Image alt="image_1" filename="image_3.jpg" />
+    <Image alt="image_1" filename="image_4.jpg" />
     </div>
 )
 

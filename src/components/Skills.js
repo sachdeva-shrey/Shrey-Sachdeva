@@ -42,6 +42,7 @@ const Skills = () => (
               margin: "10% 45%",
             }}
             src={code}
+            alt="code"
           ></img>
           <h6 className="sub-heading">Code</h6>
           <h4>The duct tape that keeps the world together.</h4>
@@ -52,15 +53,15 @@ const Skills = () => (
           >
             Languages:
           </h4>
-          <li>
-            <ul>HTML/(S)CSS</ul>
-            <ul>Javascript</ul>
-            <ul>ReactJS</ul>
-            <ul>React Native</ul>
-            <ul>Firebase</ul>
-            <ul>NodeJS</ul>
-            <ul>MongoDB</ul>
-          </li>
+          <ul>
+            <li>HTML/(S)CSS</li>
+            <li>Javascript</li>
+            <li>ReactJS</li>
+            <li>React Native</li>
+            <li>Firebase</li>
+            <li>NodeJS</li>
+            <li>MongoDB</li>
+          </ul>
         </div>
         <div className="container container-right">
           <img
@@ -71,6 +72,7 @@ const Skills = () => (
               margin: "10% 45%",
             }}
             src={design}
+            alt="design"
           ></img>
           <h6 className="sub-heading">Design</h6>
           <h4>The duct tape that keeps the world together.</h4>
@@ -81,8 +83,8 @@ const Skills = () => (
           >
             Tools I use:
           </h4>
-          <li>
-            <ul>Adobe Suite, Figma, Pen & paper</ul>
+          <ul>
+            <li>Adobe Suite, Figma, Pen & paper</li>
             <br></br>
 
             <h4
@@ -92,11 +94,11 @@ const Skills = () => (
             >
               Things I like to design:
             </h4>
-            <ul>UI/UX</ul>
-            <ul>Illustrations</ul>
-            <ul>Branding</ul>
-            <ul>Logos</ul>
-          </li>
+            <li>UI/UX</li>
+            <li>Illustrations</li>
+            <li>Branding</li>
+            <li>Logos</li>
+          </ul>
         </div>
       </div>
     </Fade>

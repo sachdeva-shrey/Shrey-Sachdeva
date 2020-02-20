@@ -22,57 +22,35 @@ const Work = () => (
     <Fade bottom>
       <h2>
         Always creating and hardly stopping.
-        <br /> Here's a place for some of my creations.
+        <br /> Here's a place for the rest of my creations.
       </h2>
-      <InView>
-        {({ inView, ref, entry }) => (
-          <div style={{ display: "flex" }}>
-            <div
-              ref={ref}
-              style={{
-                display: "flex",
-                position: "absolute",
-                left: "8%",
-              }}
-            >
-              <div>
-              <a href="https://mozofest.srmkzilla.net">
-                  {inView ? (
-                    <Image alt="mozohack" filename="mozohack.jpg" />
-                  ) : null}{" "}
-                </a>
-                <a href="https://srmkzilla.net">
-                  {inView ? (
-                    <Image alt="srmkzilla" filename="srmkzilla.jpg" />
-                  ) : null}{" "}
-                </a>
-                <a href="https://play.google.com/store/apps/details?id=com.ionicframework.srmpedia121298&hl=en_IN">
-                  {inView ? (
-                    <Image alt="srmpedia" filename="srmpedia.jpg" />
-                  ) : null}{" "}
-                </a>
-              </div>
-              <div>
-              <a href="https://mozofest.srmkzilla.net">
-                  {inView ? (
-                    <Image alt="mozohack" filename="mozohack.jpg" />
-                  ) : null}{" "}
-                </a>
-                <a href="https://srmkzilla.net">
-                  {inView ? (
-                    <Image alt="srmkzilla" filename="srmkzilla.jpg" />
-                  ) : null}{" "}
-                </a>
-                <a href="https://srmkzilla.net">
-                  {inView ? (
-                    <Image alt="srmpedia" filename="srmpedia.jpg" />
-                  ) : null}{" "}
-                </a>
-              </div>
-            </div>
+
+      <div style={{ display: "flex" }}>
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            left: "8%",
+          }}
+        >
+          <div>
+            <a href="https://srmkzilla.net">
+              <Image alt="srmkzilla" filename="srmkzilla_480x270.jpg" />
+            </a>
+            <a href="https://mozohack.srmkzilla.net">
+              <Image alt="mozohack" filename="mozohack_480x270.jpg" />
+            </a>
           </div>
-        )}
-      </InView>
+          <div>
+            <a href="https://play.google.com/store/apps/details?id=com.ionicframework.srmpedia121298&hl=en_IN">
+              <Image alt="srmpedia" filename="srmpedia_480x270.jpg" />
+            </a>
+            <a href="https://srmkzilla.net">
+              <Image alt="srmkzilla" filename="srmkzilla_480x270.jpg" />
+            </a>
+          </div>
+        </div>
+      </div>
     </Fade>
   </div>
 )

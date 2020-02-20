@@ -30,18 +30,7 @@ const Image = props => (
         return null
       }
 
-      return (
-          <InView>
-        {({ inView, ref, entry }) => (
-          <div ref={ref}>
-            {inView ? <Image alt="image_1" filename="image_2.jpg" /> : null}
-            {inView ? <Image alt="image_1" filename="image_1.jpg" /> : null}
-            {inView ? <Image alt="image_1" filename="image_3.jpg" /> : null}
-            {inView ? <Image alt="image_1" filename="image_4.jpg" /> : null}
-          </div>       
-        )}
-      </InView>
-      )
+      return <Img className="work" style={{ height: "270px", width: "480px", borderRadius: "6px"}} alt={props.alt} fluid={image.node.childImageSharp.fluid} />
     }}
   />
 )
