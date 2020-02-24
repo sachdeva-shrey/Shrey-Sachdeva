@@ -788,7 +788,7 @@ pre tt:after {
 .work {
   transition: 0.3s ease;
   margin-top: 60px;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   margin-left: 100px
 }
 
