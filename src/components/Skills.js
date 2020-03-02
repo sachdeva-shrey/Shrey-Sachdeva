@@ -97,7 +97,6 @@ const Skills = () => (
             <li>UI/UX</li>
             <li>Illustrations</li>
             <li>Branding</li>
-            <li>Logos</li>
           </ul>
         </div>
       </div>
