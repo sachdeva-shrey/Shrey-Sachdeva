@@ -30,7 +30,7 @@ const Image = props => (
         return null
       }
 
-      return <Img className="work" style={{ height: "500px", width: "880px", borderRadius: "6px"}} alt={props.alt} fluid={image.node.childImageSharp.fluid} />
+      return <Img className="work" style={{ height: "280px", width: "500px", borderRadius: "6px"}} alt={props.alt} fluid={image.node.childImageSharp.fluid} />
     }}
   />
 )

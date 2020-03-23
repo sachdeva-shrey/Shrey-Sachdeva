@@ -1,9 +1,5 @@
 import React from "react"
 
-import { ThemeProvider } from "styled-components";
-
-import lightTheme from "../themes/light";
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Hero from "../components/Hero"
