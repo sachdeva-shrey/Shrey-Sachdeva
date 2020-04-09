@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Shrey Sachdeva`,
+    title: `Developer 👨‍💻 | UI/UX Designer✏️`,
     description: `Developer, UI/UX Designer`,
     author: `Shrey Sachdeva`,
   },

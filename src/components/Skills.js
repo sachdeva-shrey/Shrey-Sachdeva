@@ -5,7 +5,7 @@ import styled from "styled-components"
 import code from "../images/code.svg"
 import design from "../images/graphic-design.svg"
 
-const Div = styled.div`
+const Container = styled.div`
   height: 500px;
   background: var(--main-font-color);
   margin-top: 18%;
@@ -27,7 +27,7 @@ const SubHeading = styled.h4`
 
 function Skills() {
   return (
-    <Div className="skills">
+    <Container className="skills">
       <Fade bottom>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -75,7 +75,7 @@ function Skills() {
           </div>
         </div>
       </Fade>
-    </Div>
+    </Container>
   )
 }
 

@@ -9,14 +9,13 @@ import Footer from "../components/Footer"
 import Image from "../components/image"
 
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-      <Hero />
-      <Skills />
-      <Work />
-      <Image />
-      <Footer />
-  </Layout>
+    <Layout>
+        <SEO title="Shrey Sachdeva" />
+        <Hero />
+        <Skills />
+        <Work />
+        <Footer />
+    </Layout>
 )
 
 export default IndexPage
