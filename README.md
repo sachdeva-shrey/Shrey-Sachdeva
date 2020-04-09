@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="src/images/logo_blue.png" width="100" />
+  <img alt="Logo" src="src/images/logo_blue.png" width="50" />
 </div>
 <h1 align="center">
   shreysachdeva.tech
@@ -8,7 +8,13 @@
   The first iteration of <a href="https://shreysachdeva.tech" target="_blank">shreysachdeva.tech</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 
-![demo]('src/images/screen.jpg)
+<div align="center">
+  <img alt="demo" src="src/images/screen.jpg" />
+</div>
+
+<p align="center">
+crafted with <span style="color: #8b0000;">&hearts;</span> by Shrey Sachdeva.
+</p>
 
 ## 🛠 Installation & Set Up
 
