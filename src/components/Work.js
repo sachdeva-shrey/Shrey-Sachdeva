@@ -2,7 +2,7 @@ import React from "react"
 import Fade from "react-reveal/Fade"
 import styled from "styled-components"
 
-import Image from "../components/Image"
+import Image from "./Image"
 
 const Container = styled.div`
     margin-top: 90%;
