@@ -14,19 +14,29 @@ import { FaLinkedinIn } from "react-icons/fa"
 const Container = styled.div`
     display: flex;
 `
+
 const Logo = styled.img`
     height: 50px;
     width: auto;
     margin-left: 50px;
+    @media (max-width: 320px) {
+        height: 30px;
+        margin-left: 20px;
+    }
 `
+
 const Wrapper = styled.div`
     display: flex;
     margin-left: 70%;
+    @media (max-width: 320px) {
+      margin-left: 45%;
+  }
 `
+
 const Button = styled.div`
     display: flex;
     background-color: #303741;
-    color: #FFFFFF;
+    color: #ffffff;
     border: none;
     border-radius: 6px;
     padding-left: 20px;
@@ -35,15 +45,35 @@ const Button = styled.div`
     height: 54%;
     width: 124px;
     cursor: pointer;
+    @media (max-width: 320px) {
+      margin-left: 0px;
+      width: 115px;
+  }
+`
+
+const ButtonText = styled.h4`
+    text-align: left;
+    display: inline;
+`
+
+const WavingEmoji = styled.img`
+    height: 20px;
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 10px;
+`
+const Social = styled.div`
+    @media (max-width: 320px) {
+        display: none;
+    }
 `
 
 const Header = ({ siteTitle }) => (
     <header>
         <Container>
             <Logo src={logo} alt="shrey-sachdeva-logo" />
-
             <Wrapper>
-                <div>
+                <Social>
                     <a
                         hreflang="english"
                         href="https://www.linkedin.com/in/shrey-sachdeva/"
@@ -51,7 +81,8 @@ const Header = ({ siteTitle }) => (
                         <FaLinkedinIn
                             size="1.5em"
                             color="#1FA2F2"
-                            style={{ paddingLeft: "10px" }}
+                            className="icon"
+                            style={{ paddingLeft: "10px", marginRight: '10px' }}
                             alt="linkedin"
                         />
                     </a>
@@ -62,7 +93,8 @@ const Header = ({ siteTitle }) => (
                         <FaGithub
                             size="1.5em"
                             color="#1FA2F2"
-                            style={{ paddingLeft: "10px" }}
+                            className="icon"
+                            style={{ paddingLeft: "10px", marginRight: '10px' }}
                             alt="github"
                         />
                     </a>
@@ -73,7 +105,8 @@ const Header = ({ siteTitle }) => (
                         <FaDribbble
                             size="1.5em"
                             color="#1FA2F2"
-                            style={{ paddingLeft: "10px" }}
+                            className="icon"
+                            style={{ paddingLeft: "10px", marginRight: '10px' }}
                             alt="dribbble"
                         />
                     </a>
@@ -84,7 +117,8 @@ const Header = ({ siteTitle }) => (
                         <FaBehance
                             size="1.5em"
                             color="#1FA2F2"
-                            style={{ paddingLeft: "10px" }}
+                            className="icon"
+                            style={{ paddingLeft: "10px", marginRight: '10px' }}
                             alt="behance"
                         />
                     </a>
@@ -95,32 +129,15 @@ const Header = ({ siteTitle }) => (
                         <FaMedium
                             size="1.5em"
                             color="#1FA2F2"
-                            style={{ paddingLeft: "10px" }}
+                            className="icon"
+                            style={{ paddingLeft: "10px", marginRight: '10px' }}
                             alt="medium"
                         />
                     </a>
-                </div>
-                <Button
-                    className="hi"
-                >
-                    <h4
-                        style={{
-                            textAlign: "left",
-                            display: "inline",
-                        }}
-                    >
-                        Say Hi
-                    </h4>
-                    <img
-                        style={{
-                            height: "20px",
-                            display: "inline-block",
-                            paddingTop: "5px",
-                            paddingLeft: "10px",
-                        }}
-                        src={hi}
-                        alt="waving hand"
-                    ></img>
+                </Social>
+                <Button className="hi">
+                    <ButtonText>Say Hi</ButtonText>
+                    <WavingEmoji src={hi} alt="waving hand"></WavingEmoji>
                 </Button>
             </Wrapper>
         </Container>

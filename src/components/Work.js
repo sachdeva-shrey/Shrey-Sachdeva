@@ -5,36 +5,47 @@ import styled from "styled-components"
 import Image from "../components/Image"
 
 const Container = styled.div`
-  margin-top: 90%;
+    margin-top: 90%;
+    @media (max-width: 320px) {
+        margin-top: 530%;
+    }
 `
 
 const Div = styled.div`
     display: flex;
     position: absolute;
     left: 8%;
+    @media (max-width: 320px) {
+        display: block;
+    }
+`
+
+const Header = styled.h2`
+    @media (max-width: 320px) {
+        font-size: 1.8rem;
+    }
 `
 
 function Work() {
     return (
         <Container>
             <Fade bottom>
-                <h2>
+                <Header>
                     Always creating and hardly stopping.
-                    <br /> Here's a place for the rest of my creations.
-                </h2>
-
+                    <br /> Here's a place for some of my creations.
+                </Header>
                 <Div>
                     <div>
                         <a href="https://srmkzilla.net">
                             <Image
                                 alt="srmkzilla"
-                                filename="srmkzilla_480x270.jpg"
+                                filename="srmkzilla.jpg"
                             />
                         </a>
                         <a href="https://mozohack.srmkzilla.net">
                             <Image
                                 alt="mozohack"
-                                filename="mozohack_480x270.jpg"
+                                filename="mozohack.jpg"
                             />
                         </a>
                     </div>
@@ -42,13 +53,13 @@ function Work() {
                         <a href="https://play.google.com/store/apps/details?id=com.ionicframework.srmpedia121298&hl=en_IN">
                             <Image
                                 alt="srmpedia"
-                                filename="srmpedia_480x270.jpg"
+                                filename="srmpedia.jpg"
                             />
                         </a>
-                        <a href="https://srmkzilla.net">
+                        <a href="marketplace.visualstudio.com/items?itemName=SRMKZILLA.Mellow">
                             <Image
-                                alt="srmkzilla"
-                                filename="srmkzilla_480x270.jpg"
+                                alt="mellow"
+                                filename="mellow.jpg"
                             />
                         </a>
                     </div>

@@ -7,11 +7,17 @@ const Container = styled.div`
     background-color: var(--main-font-color);
     height: 320px;
     margin-top: 55%;
+    @media (max-width: 320px) {
+        margin-top: 250%;
+    }
 `
 
 const Credits = styled.p`
     color: var(--grey-color);
     margin-bottom: 2%;
+    @media (max-width: 320px) {
+        font-size: 0.9rem;
+    }
 `
 
 const Link = styled.a`
@@ -27,7 +33,7 @@ const Image = styled.img`
 `
 
 const Button = styled.button`
-    background-color: #262d37;
+    background-color: #303741;
     color: white;
     border: none;
     border-radius: 6px;
@@ -39,12 +45,20 @@ const Button = styled.button`
 
 const Title = styled.h2`
     padding-top: 70px;
+    margin: 0px 5px;
 `
 
 const Socials = styled.div`
     display: flex;
-    margin-left: 37%;
+    align-items: center;
+    justify-content: center;
     margin-top: 5%;
+    color: #fff;
+    @media (max-width: 320px) {
+        margin-left: 0px;
+        font-size: 0.9rem;
+        margin-top: 10%;
+    }
 `
 const ButtonText = styled.h2`
     display: inline;
@@ -70,7 +84,7 @@ function Footer() {
                     </Button>
                 </Link>
             </Container>
-            <Socials className="socials">
+            <Socials>
                 <Link href="https://github.com/shrey-sachdeva2000">
                     <p>GitHub</p>
                 </Link>

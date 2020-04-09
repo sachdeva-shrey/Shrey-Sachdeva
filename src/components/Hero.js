@@ -13,18 +13,39 @@ const Title = styled.h1`
     line-height: 1.1;
     text-align: center;
     color: var(--main-font-color);
+    @media (max-width: 320px) {
+        font-size: 1.8rem;
+    }
 `
 
 const SubHeading = styled.h6`
     font-size: 1.5rem;
     text-align: center;
+    margin-bottom: 1rem;
+    @media (max-width: 320px) {
+        font-size: 1rem;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+`
+
+const SubHeadingLeft = styled.h6`
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 28%;
+    margin-bottom: 1rem;
+    @media (max-width: 320px) {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 10%;
+    }
 `
 
 function Hero() {
     return (
         <Div>
             <Fade bottom>
-                <SubHeading>Hi,</SubHeading>
+                <SubHeadingLeft>Hi,</SubHeadingLeft>
                 <Title>I'm Shrey Sachdeva,</Title>
                 <SubHeading>a developer and designer</SubHeading>
                 <SubHeading>

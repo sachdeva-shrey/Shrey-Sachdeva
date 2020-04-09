@@ -1,5 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import styled from "styled-components"
+
 import Img from "gatsby-image"
 
 const Image = props => (
@@ -30,16 +32,11 @@ const Image = props => (
             }
 
             return (
-                <Img
-                    className="work"
-                    style={{
-                        height: "280px",
-                        width: "500px",
-                        borderRadius: "6px",
-                    }}
-                    alt={props.alt}
-                    fluid={image.node.childImageSharp.fluid}
-                />
+                    <Img
+                        className="work"
+                        alt={props.alt}
+                        fluid={image.node.childImageSharp.fluid}
+                    />
             )
         }}
     />
