@@ -1,14 +1,14 @@
 <div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/master/src/images/logo.png" width="100" />
+  <img alt="Logo" src="src/images/logo_blue.png" width="100" />
 </div>
 <h1 align="center">
   shreysachdeva.tech
 </h1>
 <p align="center">
-  The first iteration of <a href="https://shreysachdeva.tech" target="_blank">shreysachdeva.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  The first iteration of <a href="https://shreysachdeva.tech" target="_blank">shreysachdeva.tech</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
 </p>
 
-![demo]('./src/images/screen.PNG)
+![demo]('src/images/screen.jpg)
 
 ## 🛠 Installation & Set Up
 
