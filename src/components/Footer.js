@@ -13,9 +13,9 @@ const Wrapper = styled.div`
 const Container = styled.div`
     background-color: var(--main-font-color);
     height: 320px;
-    margin-top: 55%;
+    margin-top: 70%;
     @media (max-width: 415px) {
-        margin-top: 210%;
+        margin-top: 320%;
     }
 `
 

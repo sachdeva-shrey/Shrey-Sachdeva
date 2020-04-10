@@ -12,12 +12,18 @@ const Container = styled.div`
 `
 
 const Div = styled.div`
-    display: flex;
     position: absolute;
     left: 8%;
     @media (max-width: 415px) {
-        display: block;
+        display: inline-block;
     }
+`
+
+const ImageContainer = styled.div`
+   display: flex;
+   @media (max-width: 415px) {
+    display: block;
+}
 `
 
 const Header = styled.h2`
@@ -35,22 +41,30 @@ function Work() {
                     <br /> Here's a place for some of my creations.
                 </Header>
                 <Div>
-                    <div>
-                        <a href="https://srmkzilla.net">
-                            <Image alt="srmkzilla" filename="srmkzilla.jpg" />
-                        </a>
+                    <ImageContainer>
                         <a href="https://mozohack.srmkzilla.net">
                             <Image alt="mozohack" filename="mozohack.jpg" />
                         </a>
-                    </div>
-                    <div>
+                        <a href="#">
+                            <Image alt="connekt" filename="connekt.jpg" />
+                        </a>
+                    </ImageContainer>
+                    <ImageContainer>
                         <a href="https://play.google.com/store/apps/details?id=com.ionicframework.srmpedia121298&hl=en_IN">
                             <Image alt="srmpedia" filename="srmpedia.jpg" />
                         </a>
-                        <a href="marketplace.visualstudio.com/items?itemName=SRMKZILLA.Mellow">
+                        <a href="https:/www.marketplace.visualstudio.com/items?itemName=SRMKZILLA.Mellow">
                             <Image alt="mellow" filename="mellow.jpg" />
                         </a>
-                    </div>
+                    </ImageContainer>
+                    <ImageContainer>
+                        <a href="https://srmkzilla.net">
+                            <Image alt="srmkzilla" filename="srmkzilla.jpg" />
+                        </a>
+                        <a href="#">
+                            <Image alt="forms" filename="forms_by_srmkzilla.jpg" />
+                        </a>
+                    </ImageContainer>
                 </Div>
             </Fade>
         </Container>
