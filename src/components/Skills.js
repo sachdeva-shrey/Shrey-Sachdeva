@@ -46,10 +46,11 @@ const Grid = styled.div`
     box-shadow: 0px 7px 5px 0px #292929;
     margin-bottom: 20%;
     text-align: center;
-    @media (max-width: 320px) {
+    @media (max-width: 415px) {
         display: block;
-        height: 1000px;
-        width: 80%;
+        height: 100%;
+        width: 90%;
+        margin-top: 50px;
     }
 `
 
@@ -63,7 +64,7 @@ const RightGrid = styled.div`
     display: inline-block;
     border-left: 0.5px solid var(--main-font-color);
     text-align: center;
-    @media screen and (max-width: 320px) {
+    @media (max-width: 415px) {
         border-left: none;
     }
 `

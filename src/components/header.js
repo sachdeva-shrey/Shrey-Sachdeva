@@ -19,18 +19,17 @@ const Logo = styled.img`
     height: 50px;
     width: auto;
     margin-left: 50px;
-    @media (max-width: 320px) {
-        height: 30px;
-        margin-left: 20px;
+    @media (max-width: 415px) {
+        height: 28px;
     }
 `
 
 const Wrapper = styled.div`
     display: flex;
     margin-left: 70%;
-    @media (max-width: 320px) {
-      margin-left: 45%;
-  }
+    @media (max-width: 415px) {
+        margin-left: 35%;
+    }
 `
 
 const Button = styled.div`
@@ -45,10 +44,6 @@ const Button = styled.div`
     height: 54%;
     width: 124px;
     cursor: pointer;
-    @media (max-width: 320px) {
-      margin-left: 0px;
-      width: 115px;
-  }
 `
 
 const ButtonText = styled.h4`
@@ -63,7 +58,7 @@ const WavingEmoji = styled.img`
     padding-left: 10px;
 `
 const Social = styled.div`
-    @media (max-width: 320px) {
+    @media (max-width: 415px) {
         display: none;
     }
 `
@@ -82,7 +77,7 @@ const Header = ({ siteTitle }) => (
                             size="1.5em"
                             color="#1FA2F2"
                             className="icon"
-                            style={{ paddingLeft: "10px", marginRight: '10px' }}
+                            style={{ paddingLeft: "10px", marginRight: "10px" }}
                             alt="linkedin"
                         />
                     </a>
@@ -94,7 +89,7 @@ const Header = ({ siteTitle }) => (
                             size="1.5em"
                             color="#1FA2F2"
                             className="icon"
-                            style={{ paddingLeft: "10px", marginRight: '10px' }}
+                            style={{ paddingLeft: "10px", marginRight: "10px" }}
                             alt="github"
                         />
                     </a>
@@ -106,7 +101,7 @@ const Header = ({ siteTitle }) => (
                             size="1.5em"
                             color="#1FA2F2"
                             className="icon"
-                            style={{ paddingLeft: "10px", marginRight: '10px' }}
+                            style={{ paddingLeft: "10px", marginRight: "10px" }}
                             alt="dribbble"
                         />
                     </a>
@@ -118,7 +113,7 @@ const Header = ({ siteTitle }) => (
                             size="1.5em"
                             color="#1FA2F2"
                             className="icon"
-                            style={{ paddingLeft: "10px", marginRight: '10px' }}
+                            style={{ paddingLeft: "10px", marginRight: "10px" }}
                             alt="behance"
                         />
                     </a>
@@ -130,7 +125,7 @@ const Header = ({ siteTitle }) => (
                             size="1.5em"
                             color="#1FA2F2"
                             className="icon"
-                            style={{ paddingLeft: "10px", marginRight: '10px' }}
+                            style={{ paddingLeft: "10px", marginRight: "10px" }}
                             alt="medium"
                         />
                     </a>

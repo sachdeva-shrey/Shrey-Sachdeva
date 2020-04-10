@@ -13,8 +13,8 @@ const Title = styled.h1`
     line-height: 1.1;
     text-align: center;
     color: var(--main-font-color);
-    @media (max-width: 320px) {
-        font-size: 1.8rem;
+    @media (max-width: 415px) {
+        font-size: 2rem;
     }
 `
 
@@ -22,10 +22,10 @@ const SubHeading = styled.h6`
     font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
-    @media (max-width: 320px) {
+    @media (max-width: 415px) {
         font-size: 1rem;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 `
 
@@ -34,10 +34,10 @@ const SubHeadingLeft = styled.h6`
     text-align: left;
     margin-left: 28%;
     margin-bottom: 1rem;
-    @media (max-width: 320px) {
+    @media (max-width: 415px) {
         font-size: 1rem;
         margin-bottom: 1rem;
-        margin-left: 10%;
+        margin-left: 15%;
     }
 `
 
